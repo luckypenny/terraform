@@ -5,13 +5,13 @@ ingress = [
     to_port          = 443
     protocol         = "tcp"
     cidr_blocks      = ["1.1.1.0/24"]
-  }, 
+  },
   {
-    description      = "TLS from VPC"
-    from_port        = 8080
-    to_port          = 8080
+    description      = "ADD"
+    from_port        = 80
+    to_port          = 80
     protocol         = "tcp"
-    cidr_blocks      = ["1.1.1.0/24"]
+    cidr_blocks      = ["1.1.2.0/24"]
   },
   {
     description      = ""
